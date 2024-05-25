@@ -1,0 +1,19 @@
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
+spring:
+  flyway:
+    url: jdbc:postgresql://localhost:5432/test
+    user: postgres
+    password: 1000-7
+  r2dbc:
+    password: 1000-7
+    url: r2dbc:postgresql://localhost:5432/test
+    username: postgres
+    
+server:
+  port: 8081
+  
